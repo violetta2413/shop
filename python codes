@@ -1,0 +1,28 @@
+import turtle               # allows us to use the turtles library
+wn = turtle.Screen()        # creates a graphics window
+alex = turtle.Turtle()    
+t = alex
+wn.bgcolor("lightblue")
+
+
+def sokszog (szogekszama, hossz, szin):
+    for i in range (szogekszama):
+        alex.color(szin)
+        alex.forward(hossz)
+        alex.left(360/szogekszama)
+        
+ 
+sokszog(3, 100, 'magenta')
+sokszog(6, 100, 'purple')
+t.bk(60)
+t.lt
+sokszog(6, 100, 'purple')
+sokszog(3, 100, 'magenta')
+
+t.lt(60)
+t.fd(199)
+t.bk(199)
+t.rt(60)
+t.fd(160)
+t.lt(120)
+t.fd(199)
